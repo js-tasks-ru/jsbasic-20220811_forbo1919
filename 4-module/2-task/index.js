@@ -3,7 +3,7 @@ function makeDiagonalRed(table) {
 
   // let cellsList = document.querySelector('tbody');
 
-  let cellsList = document.querySelector('table');
+  let cellsList = table;
 
   for (let i = 0; i < cellsList.rows.length; i++) {
 

@@ -1,7 +1,7 @@
 function highlight(table) {
   // ваш код...
 
-  let cellsList = document.querySelector('tbody');
+  let cellsList = table.querySelector('tbody');
 
   //console.log( cellsList )
 
@@ -10,8 +10,8 @@ function highlight(table) {
     console.log( rowLine.cells[3].dataset.available )
 
     if (rowLine.cells[3].hasAttribute('data-available') !== true ) {rowLine.hidden = true}
-    else if (rowLine.cells[3].dataset.available = true) {rowLine.classList.add('Available')}
-    else if (rowLine.cells[3].dataset.available = false ) {rowLine.classList.add('Unavailable')}
+    else if (rowLine.cells[3].dataset.available == 'true') {rowLine.classList.add('available')}
+    else if (rowLine.cells[3].dataset.available == 'false' ) {rowLine.classList.add('unavailable')}
 
     console.log(rowLine.cells[2].innerHTML)
 
